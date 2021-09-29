@@ -1,0 +1,37 @@
+td[class=black] {
+    width: 100px;
+    height: 100px;
+    border: 3px solid blue;
+    background-color: black;
+}
+
+td[class=white] {
+    width: 100px;
+    height: 100px;
+    border: 3px solid blue;
+    background-color: white;
+}
+
+
+td[class=redpiece] {
+    width: 100px;
+    height: 100px;
+    border: 3px solid blue;
+    background-image: url("redchk.png");
+    background-size: cover;
+}
+
+td[class=blackpiece] {
+    width: 100px;
+    height: 100px;
+    border: 3px solid blue;
+    background-image: url("blkchk.png");
+    background-size: cover;
+    background-color: white;
+}
+
+td {
+    width: 100px;
+    height: 100px;
+    border-style: bold;
+}

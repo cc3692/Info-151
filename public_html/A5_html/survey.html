@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Simple Survey Form</title>
+        <link rel="stylesheet" type="text/css" href="styles.css" media="all">
+        <script type="text/javascript" src="action.js" charset="utf-8"></script>
+    </head>
+    <body>
+        <form name="survey" action="save.php" onsubmit="return dataValidation();" method="post"> 
+            <h2>Simple Survey</h2>
+            Name: <input type="text" id="name" name="name" 
+            placeholder="Enter your full name...">
+            <span id="nameError"></span>
+            <br><br>
+            Email: <input type="text" id="email" name="email" 
+            placeholder="Enter your email...">
+            <span id="emailError"></span>
+            <br><br>
+            College: 
+            <select id="college" name="college">
+                <option value="Business">Lebow College of Business</option>
+                <option value="Arts and Sciences">College of Arts and Sciences</option>
+                <option value="Biomed Engr Sciences and Health">School of Biomedical Engineering, Sciences, and Health Systems</option>
+                <option value="Computing and Informatics">College of Computing and Informatics</option>
+                <option value="Education">School of Education</option>
+                <option value="Engineering">College of Engineering</option>
+                <option value="Entrepreneurship">Charles D. Close School of Entrepreneurship</option>
+                <option value="Media Arts and Design">Westphal College of Media Arts and Designs</option>
+                <option value="Medicine">College of Medicine</option>
+                <option value="Nursing and Health Professions">College of Nursing and Health Professions</option>
+                <option value="Public Health">Dornsife School of Public Health</option>
+            </select>
+            <br><br>
+            Favorite Place to Study:
+            <br>
+            <input type="checkbox" name="korma">Korman Center<br>
+            <input type="checkbox" name="rossc">Ross Commons<br>
+            <input type="checkbox" name="gerri">Gerri C. Lebow Hall<br>
+            <input type="checkbox" name="hager">Hagerty Library<br>
+            <input type="checkbox" name="pearl">Pearlstein Building Patio<br>
+            <input type="checkbox" name="colab">Collaboration Rooms in Lebow College<br>
+        <br><br>
+        <button type="submit" onclick="dataValidation();" value="Submit">Validate and Submit</button>
+        </form>
+    </body>
+</html>

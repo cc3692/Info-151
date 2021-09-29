@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <h1>My First Page</h1>
+            <meta charset="UTF-8" />
+        </head>
+        <body>
+            <form name="data">
+                <input type="text" name="grade">
+                <button type="button" onclick="processGrade()">Process Grade</button>
+            </form>
+             
+            <span id="result"></span>
+            
+            <script>
+                function processGrade () {
+                var grade = document.data.grade.value;
+                    if (grade >= 60) {
+                        document.getElementById("result").innerHTML= "Passed";
+                    } else {
+                        document.getElementById("result").innerHTML= "Failed";
+                            result = false;
+                    }     
+                }
+            </script>
+             
+        </body>
+    </html>
